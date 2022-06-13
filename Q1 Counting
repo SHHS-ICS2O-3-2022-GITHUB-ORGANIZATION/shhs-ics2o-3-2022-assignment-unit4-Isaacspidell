@@ -1,0 +1,8 @@
+variable = 0
+number1 = int(input("a message"))
+while variable !=number1:
+    variable = variable+1
+    print (variable)
+while variable !=0:
+    variable = variable-1
+    print (variable)
