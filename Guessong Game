@@ -1,0 +1,18 @@
+#This Code Is a Guessing game
+#User inputs 2 numbers for the computer to create a range with 
+# The Computer picks a random number in the created range and asks the user to guess the number
+#User inputs their guess 
+# If users guess is correct the computer tells them "It took you_ try's to get it right
+
+import random
+guesses = 0
+guess = 0
+min = int(input("a message")) 
+max = int(input("a message"))
+ans=random.randint(min, max)
+while guess !=ans:
+    guesses = guesses+1 
+    guess = int(input("guess a number"))
+    if guess !=ans:
+        print("Wrong")
+print("It Took You "+str(guesses)+" trys to to get it right")
